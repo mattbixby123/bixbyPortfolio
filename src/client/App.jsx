@@ -3,20 +3,21 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import './style.css';
 
 function App() {
   
 
   return (
     <>
+    <div className="App">
     <NavBar />
-    <h1>hello hi welcome - how are you?</h1>
-    {/* <Routes>
+    <Routes>
       <Route path= '/' element={<Home />} />
-      <Route path= '/portfolio' element={<Portfolio />} />
-      <Route path= '/contact' element={<Contact />} />
-    </Routes> */}
-    
+      {/* <Route path= '/portfolio' element={<Portfolio />} />
+      <Route path= '/contact' element={<Contact />} /> */}
+    </Routes>
+    </div>
     </>
   )
 }

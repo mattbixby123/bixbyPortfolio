@@ -1,6 +1,8 @@
 function Home() {
   return ( 
-    sadf
+    <>
+    <h1>hello hi welcome - how are you?</h1>
+    </>
    );
 }
 
