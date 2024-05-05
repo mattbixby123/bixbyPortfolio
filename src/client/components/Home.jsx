@@ -34,8 +34,21 @@ function Home() {
           <Typography variant="h5" color="#003300" component="div">
             Hobbies and Interests
           </Typography>
-          <Typography variant="body2" color="#181818" component="p">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          <Typography variant="body2" color="#181818" component="div">
+              <ul>
+                <li>
+                I have a cat and a dog 🐱🐕
+                </li>
+                <li>
+                Reading (all generes) 📚
+                </li>
+                <li>
+                Hiking 🥾🌲
+                </li>
+                <li>
+                Plants 🪴🌵
+                </li>
+              </ul>
           </Typography>
         </CardContent>
       </Paper>
