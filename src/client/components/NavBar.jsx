@@ -48,7 +48,7 @@ function NavBar() {
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             {navItems.map((item) => (
-              <Button key={item} color="inherit" sx={{ fontWeight: '500', '&:active': {
+              <Button key={item} color="inherit" sx={{ fontWeight: '100', '&:active': {
                 backgroundColor: '#003333', // Change background color on click
               },     '&:focus': {
                 outline: 'none', // Remove outline when focused

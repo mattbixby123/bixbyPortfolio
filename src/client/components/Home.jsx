@@ -3,7 +3,7 @@ import { Paper, Card, CardContent, Typography } from '@mui/material';
 
 function Home() {
   return ( 
-    <div style={{ display: 'flex', marginTop: '-100px' }}>
+    <div style={{ display: 'flex' }}>
       <Paper elevation={1} sx={{ padding: '20px', backgroundColor: '#d9d9d9', color: '#181818', width: '20%' }}>
         <img src="Bixby-purpleback.png" alt="Avatar" style={{ width: '100%' }} />
       </Paper>
