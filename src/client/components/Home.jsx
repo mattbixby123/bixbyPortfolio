@@ -40,7 +40,7 @@ function Home() {
                 I have a cat and a dog 🐱🐕
                 </li>
                 <li>
-                Reading (all generes) 📚
+                Reading (all genres) 📚
                 </li>
                 <li>
                 Hiking 🥾🌲
