@@ -42,14 +42,14 @@ function NavBar() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap component="div">
+            <Typography variant="h6" color="#d9d9d9" noWrap component="div">
               Matthew Bixby
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             {navItems.map((item) => (
-              <Button key={item} color="inherit" sx={{ fontWeight: '100', '&:active': {
-                backgroundColor: '#003333', // Change background color on click
+              <Button key={item} color="inherit" sx={{ fontWeight: '250', '&:active': {
+                backgroundColor: '#003300', // Change background color on click
               },     '&:focus': {
                 outline: 'none', // Remove outline when focused
               }, }}>

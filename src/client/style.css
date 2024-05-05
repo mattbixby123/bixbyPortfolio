@@ -76,3 +76,13 @@ button:focus-visible {
   margin-top: 7%;
   height: 100vh; 
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 96px;
+  height: 96px;
+}
