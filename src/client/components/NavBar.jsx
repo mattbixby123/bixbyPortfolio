@@ -25,8 +25,13 @@ function NavBar() {
 
   return ( 
     <>
-      <AppBar position="fixed">
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      <AppBar position="absolute">
+      <Toolbar sx={{ 
+              color: '#d9d9d9',
+              backgroundColor: '#181818', // Set background color to #181818
+              display: 'flex',
+              justifyContent: 'space-between'
+              }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <IconButton
               color="inherit"
@@ -38,12 +43,16 @@ function NavBar() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap component="div">
-              Personal Portfolio of Matthew Bixby
+              Matthew Bixby
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             {navItems.map((item) => (
-              <Button key={item} color="inherit">
+              <Button key={item} color="inherit" sx={{ fontWeight: '500', '&:active': {
+                backgroundColor: '#003333', // Change background color on click
+              },     '&:focus': {
+                outline: 'none', // Remove outline when focused
+              }, }}>
                 {item}
               </Button>
             ))}

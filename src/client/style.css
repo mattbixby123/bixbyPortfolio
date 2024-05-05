@@ -2,10 +2,11 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  margin-top: -5%;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #181818;
+  background-color: #d9d9d9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,6 +34,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 button {
@@ -47,7 +49,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #330000;
 }
 button:focus,
 button:focus-visible {
@@ -56,8 +58,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #181818;
+    background-color: #d9d9d9;
   }
   a:hover {
     color: #747bff;

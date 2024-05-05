@@ -6,6 +6,23 @@ import Contact from './components/Contact'
 import './style.css';
 
 function App() {
+  // const theme = createTheme({
+  //   palette: {
+  //     background: {
+  //       paper: '#d9d9d9',
+  //     },
+  //     text: {
+  //       primary: '#181818',
+  //       secondary: '#0c3720',
+  //     },
+  //     action: {
+  //       active: '#001E3C',
+  //     },
+  //     success: {
+  //       dark: '#009688',
+  //     }
+  //   },
+  // });
   
 
   return (
