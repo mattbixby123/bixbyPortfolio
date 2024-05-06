@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AppBar, Box, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography, Button } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 const navItems = ['Home', 'Portfolio', 'Contact'];
 
@@ -53,7 +54,7 @@ function NavBar() {
               },     '&:focus': {
                 outline: 'none', // Remove outline when focused
               }, }}>
-                {item}
+                <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}>{item}</Link>
               </Button>
             ))}
           </Box>

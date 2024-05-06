@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  margin-top: -5%;
+  /* margin-top: -5%; */
 
   color-scheme: light dark;
   color: #181818;
@@ -16,25 +16,12 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #d9d9d9;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  text-align: center;
+  /* color: #003300; */
+  color: #CCFFCC;
 }
 
 button {
@@ -62,7 +49,7 @@ button:focus-visible {
     background-color: #d9d9d9;
   }
   a:hover {
-    color: #747bff;
+    color: #003300;
   }
   button {
     background-color: #f9f9f9;
@@ -73,8 +60,7 @@ button:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 7%;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .logo-container {
@@ -85,4 +71,12 @@ button:focus-visible {
 .logo-image {
   width: 70px;
   height: 70px;
+}
+
+.ContactForm {
+  margin: 0 auto;
+}
+
+.main-text-contact {
+  font-size: 18px;
 }
