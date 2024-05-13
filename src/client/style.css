@@ -65,7 +65,7 @@ button:focus-visible {
 
 .logo-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .logo-image {
@@ -79,4 +79,8 @@ button:focus-visible {
 
 .main-text-contact {
   font-size: 18px;
+}
+
+.projectList{
+  width: 70%;
 }
