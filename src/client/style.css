@@ -82,5 +82,6 @@ button:focus-visible {
 }
 
 .projectList{
-  width: 70%;
+  width: 90%;
+  margin-top: 50px;
 }

@@ -50,7 +50,7 @@ Recently, I enrolled in the Web Development Program at Fullstack Academy, driven
           <Typography variant="body2" color="#181818" component="div">
               <ul>
                 <li>
-                I have a cat and a dog 🐱🐕
+                I have a cat and a dog 🐱🐕 (Stella and Luna)
                 </li>
                 <li>
                 Reading (all genres) 📚
