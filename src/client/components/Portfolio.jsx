@@ -5,7 +5,7 @@ function Portfolio() {
   return ( 
     <>
     <div className="projectList">
-    <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginBottom: '30px' }}>
+    <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
         Thank you for visiting ... Please click any Emoji below to open a new tab with the coresponding project
     </Typography>
     <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
@@ -45,7 +45,6 @@ function Portfolio() {
         #4 Full Stack eCommerce Applcation - <a href="https://www.youtube.com/watch?v=HZryg5wUy-w" target="_blank" style={{ textDecoration: 'underline overline' }}>💸</a>
       </Typography>
       <Typography variant="body2" color="#181818" component="p">
-      
       The capstone project is an e-commerce platform for buying vintage paper media (books, comics, and magazines).  It offers customers and admins a wide array of features and tools. The project is meticulously crafted for scalability, performance, and user satisfaction. Emphasizing meticulous database management, robust security measures, and seamless integration with payment gateways, the project aims to deliver a cutting-edge e-commerce solution tailored to meet diverse user needs.
       </Typography>
        <Typography variant="h7" color='#003300' fontWeight='900'>
