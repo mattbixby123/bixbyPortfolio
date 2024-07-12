@@ -32,7 +32,7 @@ Recently, I enrolled in the Web Development Program at Fullstack Academy, driven
               I have a Bachelor of Science in Chemistry from Ithaca College c/o 2017.
               </li>
               <li>
-              As of June 13th, 2024 I'll have a Web Development Certificate issued by Fullstack Academy for my immersive web development program (28 wks)
+              As of June 13th, 2024, I have recieved a Web Development Certificate issued by Fullstack Academy for completing my immersive web development program (28 weeks).
               </li>
             </ul>
           </Typography>
