@@ -20,7 +20,7 @@ function Home() {
           <Typography variant="body2" color="#181818" component="p">
           Hello there 👋 ... I'm Matthew Bixby, and I'm deeply passionate about full-stack web development. I view it as the cornerstone of the future and continuously strive to enhance my skills in this field. With an inherent love for learning, coupled with a natural aptitude for visualization and problem-solving, I pride myself on being an exceptionally fast learner.
 
-Recently, I enrolled in the Web Development Program at Fullstack Academy, driven by my fervent belief in the transformative power of web development. My studies encompass HTML5, CSS, JavaScript, Git and GitHub, JavaScript APIs, React (including React Router and React Hooks), Redux, SQL, and Prisma ORM.
+Recently, I completed the Web Development Program at Fullstack Academy, driven by my fervent belief in the transformative power of web development. My studies encompass HTML5, CSS, JavaScript, Git and GitHub, JavaScript APIs, React (including React Router and React Hooks), Redux, SQL, and Prisma ORM.
           </Typography>
           <br />
           <Typography variant="h5" color="#003300" component="div">
@@ -50,10 +50,10 @@ Recently, I enrolled in the Web Development Program at Fullstack Academy, driven
           <Typography variant="body2" color="#181818" component="div">
               <ul>
                 <li>
-                I have a dog 🐕 (Stella)
+                Coffee ☕️
                 </li>
                 <li>
-                Reading (all genres) 📚
+                Reading, especially sci-fi 📚
                 </li>
                 <li>
                 Hiking 🥾🌲
