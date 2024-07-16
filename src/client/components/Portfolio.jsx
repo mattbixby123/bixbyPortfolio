@@ -5,7 +5,7 @@ function Portfolio() {
   return ( 
     <>
     <div className="projectList">
-    <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+    <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
         Thank you for visiting ... Please click any Emoji below to open a new tab with the coresponding project
     </Typography>
     <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
