@@ -1,14 +1,39 @@
 import React from "react";
 import { Paper, Typography } from '@mui/material'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 function Portfolio() {
   return ( 
     <>
-    <div className="projectList">
-    <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
+    <div className="projectCarousel">
+    <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginTop: '0px' }}>
         Thank you for visiting ... Please click any Emoji below to open a new tab with the coresponding project
     </Typography>
+    
     <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
+      <Carousel responsive={responsive}>
+        <div>
+        <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
       <Typography variant="h5" color="#003300" component="div">
         #1 Puppy Bowl - <a href="https://664255b4e94e3705d7a90302--bespoke-pixie-99297e.netlify.app/" target="_blank" style={{ textDecoration: 'underline overline' }}>🐶</a>
       </Typography>
@@ -19,7 +44,9 @@ function Portfolio() {
         TECHNOLOGIES IMPLEMENTED: React-Redux, React Router, Redux Toolkit, HTML5, CSS, Javascript, Javascript APIs.  <b>(React Fundamentals)</b>
       </Typography>
     </Paper>
-    <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
+        </div>
+        <div>
+        <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
       <Typography variant="h5" color="#003300" component="div">
         #2 Book Buddy - <a href="https://66427587496fcb2483ba46cf--celebrated-crostata-770299.netlify.app/" target="_blank" style={{ textDecoration: 'underline overline' }}>📗</a>
       </Typography>
@@ -29,7 +56,9 @@ function Portfolio() {
         TECHNOLOGIES IMPLEMENTED: React, React Router, <u><b>React Hooks(state and effect)</b></u>, Redux Toolkit, <u>RTK Query</u>, Authentication, HTML5, CSS, JS, and JS APIs.
       </Typography>
     </Paper>
-    <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
+        </div>
+        <div>
+        <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
       <Typography variant="h5" color="#003300" component="div">
         #3 Classroom Manager - <a href="https://unit4-classroommanager-starter.onrender.com/" target="_blank" style={{ textDecoration: 'underline overline' }}>🧑‍🏫</a>
       </Typography>
@@ -40,7 +69,9 @@ function Portfolio() {
         TECHNOLOGIES IMPLEMENTED: React-Redux, React-Router, Redux Toolkit, Express JS, PostgreSQL, <u>Prisma ORM</u>, bcrypt encryption, <u>GitHub OAuth</u>.
       </Typography>
     </Paper>
-    <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
+        </div>
+        <div>
+        <Paper elevation={1} sx={{ backgroundColor: '#d9d9d9', color: '#181818', padding: '20px', margin: '10px' }}>
       <Typography variant="h5" color="#003300" component="div">
         #4 Full Stack eCommerce Applcation - <a href="https://www.youtube.com/watch?v=HZryg5wUy-w" target="_blank" style={{ textDecoration: 'underline overline' }}>💸</a>
       </Typography>
@@ -50,6 +81,9 @@ function Portfolio() {
        <Typography variant="h7" color='#003300' fontWeight='900'>
         TECHNOLOGIES IMPLEMENTED: React-Redux, React-Router, Redux Toolkit, Express JS, PostgreSQL, Prisma ORM, bcrypt encryption, MUI Styling & Pagination, STRIPE payment processing 
       </Typography>
+    </Paper>
+        </div>
+      </Carousel>
     </Paper>
     </div>
     </>
