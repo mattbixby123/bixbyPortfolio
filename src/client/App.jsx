@@ -4,7 +4,7 @@ import Home from './components/Home'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import './style.css';
-import { createTheme } from '@mui/material'
+// import { createTheme } from '@mui/material'
 
 function App() {
 
