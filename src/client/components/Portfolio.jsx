@@ -26,7 +26,7 @@ function Portfolio() {
   return (
     <>
       <div className="projectCarousel">
-        <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+        <Typography variant="h7" color='#003300' fontWeight='900' backgroundColor='#CCFFCC' sx={{ display: 'flex', justifyContent: 'center', marginTop: '100px' }}>
           Thank you for visiting ... Please click any Emoji below to open a new tab with the coresponding project
         </Typography>
 
