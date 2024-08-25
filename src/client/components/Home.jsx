@@ -6,7 +6,17 @@ import TechnologyBadge from './TechnologyBadge';
 import SectionTitle from './SectionTitle';
 
 const technologies = [
-  'HTML5', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js', 'Express', 'SQL', 'Git'
+  'HTML5',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux Toolkit',
+  'Node.js',
+  'Express.js',
+  'Prisma ORM',
+  'SQL',
+  'Git',
+  'TypeScript', 'Next.js',
 ];
 
 function Home() {
@@ -41,6 +51,22 @@ function Home() {
             <Typography variant="body1" paragraph>
               Hello there 👋 ... I'm deeply passionate about full-stack web development. I view it as the cornerstone of the future and continuously strive to enhance my skills in this field. With an inherent love for learning, coupled with a natural aptitude for visualization and problem-solving, I pride myself on being an exceptionally fast learner.
             </Typography>
+            <Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold', color: '#181818' }}>
+              CONTINUOUS LEARNING
+            </Typography>
+            <ul>
+
+              <Typography variant="body1">
+                ➤ Completed J.P. Morgan Software Engineering Virtual Experience on Forage, gaining hands-on experience with financial technology.
+                <br />
+                ➤ Self-taught TypeScript in two weeks to enhance Horizon Bank project.
+                <br />
+                {/* ➤ Actively participating in Capital One case interview workshops to prepare for the hiring process.
+                <br /> */}
+                ➤ Currently studying for the AWS Certified Cloud Practitioner Exam
+                <br />
+              </Typography>
+            </ul>
           </Grid>
         </Grid>
 
