@@ -45,7 +45,7 @@ function NavBar() {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, textAlign: isMobile ? 'center' : 'left' }}
+            sx={{ color: '#d9d9d9', flexGrow: 1, textAlign: isMobile ? 'center' : 'left' }}
           >
             Matthew Bixby
           </Typography>
