@@ -34,7 +34,7 @@ const ContactForm = () => {
 
   return (
     <Container maxWidth="sm">
-      <Paper elevation={3} sx={{ p: 4, mt: 4, backgroundColor: '#d9d9d9' }}>
+      <Paper elevation={3} sx={{ p: 4, my: 4, backgroundColor: '#f5f5f5' }}>
         <Typography variant="h4" align="center" gutterBottom color="#003300">
           Contact Me
         </Typography>
@@ -43,6 +43,7 @@ const ContactForm = () => {
         </Typography>
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
           <TextField
+            sx={{ backgroundColor: "#d9d9d9" }}
             margin="normal"
             required
             fullWidth
@@ -53,6 +54,7 @@ const ContactForm = () => {
             variant="outlined"
           />
           <TextField
+            sx={{ backgroundColor: "#d9d9d9" }}
             margin="normal"
             required
             fullWidth
@@ -63,6 +65,7 @@ const ContactForm = () => {
             variant="outlined"
           />
           <TextField
+            sx={{ backgroundColor: "#d9d9d9" }}
             margin="normal"
             required
             fullWidth
@@ -73,6 +76,7 @@ const ContactForm = () => {
             variant="outlined"
           />
           <TextField
+            sx={{ backgroundColor: "#d9d9d9" }}
             margin="normal"
             required
             fullWidth

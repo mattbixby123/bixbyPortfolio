@@ -8,7 +8,8 @@ const ProjectCard = ({ title, description, technologies, emoji, link }) => (
     flexDirection: 'column',
     transition: '0.3s',
     '&:hover': { transform: 'translateY(-5px)' },
-    backgroundColor: '#d9d9d9'
+    backgroundColor: '#f5f5f5'
+
   }}>
     <CardContent sx={{ flexGrow: 1 }}>
       <Typography variant="h6" component="div" gutterBottom color="#003300">
