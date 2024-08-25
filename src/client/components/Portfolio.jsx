@@ -36,11 +36,11 @@ const projects = [
 function Portfolio() {
   return (
     <Box sx={{ flexGrow: 1, p: 3 }}>
-      <Paper elevation={3} sx={{ p: 2, mb: 2, backgroundColor: '#CCFFCC' }}>
+      {/* <Paper elevation={3} sx={{ p: 2, mb: 2, backgroundColor: '#CCFFCC' }}>
         <Typography variant="h6" align="center" color="#003300">
           Thank you for visiting ... Please click any Emoji below to open a new tab with the corresponding project
         </Typography>
-      </Paper>
+      </Paper> */}
       <Grid container spacing={3}>
         {projects.map((project, index) => (
           <Grid item xs={12} sm={6} md={6} lg={3} key={index}>
