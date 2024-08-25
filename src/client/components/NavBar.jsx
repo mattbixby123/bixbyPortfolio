@@ -31,7 +31,7 @@ function NavBar() {
 
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: '#181818' }}>
+      <AppBar position="static" sx={{ backgroundColor: '#002200' }}>
         <Toolbar>
           <IconButton
             color="inherit"

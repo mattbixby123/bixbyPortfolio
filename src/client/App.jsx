@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: '#181818', color: '#ffffff', py: 3, mt: 'auto' }}>
+    <Box component="footer" sx={{ bgcolor: '#002200', color: '#d9d9d9', py: 3, mt: 'auto' }}>
       <Container maxWidth="lg">
         <Typography variant="body2" align="center">
           © {new Date().getFullYear()} Matthew Bixby. All rights reserved.
