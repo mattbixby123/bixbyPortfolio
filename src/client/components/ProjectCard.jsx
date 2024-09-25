@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, Chip, Button, Box } from '@mui/material';
 
-const ProjectCard = ({ title, description, technologies, emoji, link }) => (
+const ProjectCard = ({ title, description, technologies, emoji, link, code }) => (
   <Card sx={{
     height: '100%',
     display: 'flex',
@@ -9,7 +9,6 @@ const ProjectCard = ({ title, description, technologies, emoji, link }) => (
     transition: '0.3s',
     '&:hover': { transform: 'translateY(-5px)' },
     backgroundColor: '#f5f5f5'
-
   }}>
     <CardContent sx={{ flexGrow: 1 }}>
       <Typography variant="h6" component="div" gutterBottom color="#003300">
@@ -41,20 +40,37 @@ const ProjectCard = ({ title, description, technologies, emoji, link }) => (
         ))}
       </Box>
     </CardContent>
-    <Box sx={{ p: 2 }}>
-      <Button
-        variant="contained"
-        href={link}
-        target="_blank"
-        fullWidth
-        sx={{
-          bgcolor: '#003300',
-          color: '#d9d9d9',
-          '&:hover': { bgcolor: '#004400' }
-        }}
-      >
-        View Project
-      </Button>
+    <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', gap: 1 }}>
+      {link && (
+        <Button
+          variant="contained"
+          href={link}
+          target="_blank"
+          fullWidth
+          sx={{
+            bgcolor: '#003300',
+            color: '#d9d9d9',
+            '&:hover': { bgcolor: '#004400' }
+          }}
+        >
+          View Project
+        </Button>
+      )}
+      {code && (
+        <Button
+          variant="outlined"
+          href={code}
+          target="_blank"
+          fullWidth
+          sx={{
+            borderColor: '#003300',
+            color: '#003300',
+            '&:hover': { bgcolor: '#CCFFCC' }
+          }}
+        >
+          View Repository
+        </Button>
+      )}
     </Box>
   </Card>
 );
