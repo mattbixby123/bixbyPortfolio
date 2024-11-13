@@ -46,27 +46,26 @@ function Home() {
               Matthew Bixby
             </Typography>
             <Typography variant="h6" gutterBottom sx={{ color: '#181818' }}>
-              Full Stack Web Developer
+              Full Stack Software Engineer
             </Typography>
             <Typography variant="body1" paragraph>
-              Hello there 👋 ... I'm deeply passionate about full-stack web development. I view it as the cornerstone of the future and continuously strive to enhance my skills in this field. With an inherent love for learning, coupled with a natural aptitude for visualization and problem-solving, I pride myself on being an exceptionally fast learner.
+              Hello there 👋 ... I'm deeply passionate about full-stack software development and engineering. I view it as the cornerstone of the future and continuously strive to enhance my skills in this field. With an inherent love for learning, coupled with a natural aptitude for visualization and problem-solving, I pride myself on being an exceptionally fast learner.
             </Typography>
             <Typography variant="body1" gutterBottom sx={{ fontWeight: 'bold', color: '#181818' }}>
               CONTINUOUS LEARNING
             </Typography>
-            <ul>
-
-              <Typography variant="body1">
-                ➤ Completed J.P. Morgan Software Engineering Virtual Experience on Forage, gaining hands-on experience with financial technology.
-                <br />
-                ➤ Self-taught TypeScript in two weeks to enhance Horizon Bank project.
-                <br />
-                {/* ➤ Actively participating in Capital One case interview workshops to prepare for the hiring process.
-                <br /> */}
-                ➤ In October I passed the AWS Certified Cloud Practitioner Exam (CLP-CO2)
-                <br />
-              </Typography>
-            </ul>
+            {/* <ul> */}
+            <Typography variant="body1">
+              ➤ Completed J.P. Morgan Software Engineering Virtual Experience on Forage, gaining hands-on experience with financial technology.
+              <br />
+              ➤ Self-taught TypeScript in two weeks to enhance Horizon Bank Management project.
+              <br />
+              ➤ Daily algorithm practice on leetcode to strengthen and fortify my DSA/analytical knowledge
+              <br />
+              ➤ In October I passed the AWS Certified Cloud Practitioner Exam (CLP-CO2)
+              <br />
+            </Typography>
+            {/* </ul> */}
           </Grid>
         </Grid>
 
