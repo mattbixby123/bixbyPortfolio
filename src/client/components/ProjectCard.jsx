@@ -15,16 +15,18 @@ const ProjectCard = ({ title, description, technologies, emoji, link, code }) =>
         {title} <span role="img" aria-label={title}>{emoji}</span>
       </Typography>
       <Typography variant="body2" color="#181818" paragraph sx={{
-        height: '100px',
+        height: '80px',
         overflow: 'hidden',
         textOverflow: 'ellipsis',
         display: '-webkit-box',
-        WebkitLineClamp: 4,
+        WebkitLineClamp: 3,
         WebkitBoxOrient: 'vertical'
       }}>
         {description}
       </Typography>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 2 }}>
+    </CardContent>
+    <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', gap: 1 }}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 1 }}>
         {technologies.map((tech) => (
           <Chip
             key={tech}
@@ -39,8 +41,6 @@ const ProjectCard = ({ title, description, technologies, emoji, link, code }) =>
           />
         ))}
       </Box>
-    </CardContent>
-    <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', gap: 1 }}>
       {link && (
         <Button
           variant="contained"

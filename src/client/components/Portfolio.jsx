@@ -38,7 +38,7 @@ const projects = [
   {
     title: "moodTrak",
     emoji: "📆",
-    description: "How do you feel today? This is a daily mood tracking app that was completed in a single weekend. This app features a landing page to login/register as well as a dashboard page to log your mood and see your past records.",
+    description: "How do you feel today? This is a daily mood tracking app that was completed in a single weekend. This app allows you to log your  daily mood and see your past records.",
     technologies: ["React", "NextJS", "Tailwind CSS", "Firebase", "Netlify deployment"],
     link: "https://moodtrak.netlify.app/",
     code: "https://github.com/mattbixby123/moodtrak"
@@ -46,10 +46,18 @@ const projects = [
   {
     title: "Horizon Bank Acct. Manager",
     emoji: "🏦",
-    description: "How do you feel today? This is a daily mood tracking app that was completed in a single weekend. This app features a landing page to login/register as well as a dashboard page to log your mood and see your past records.",
-    technologies: ["React", "NextJS", "TypeScript", "Tailwind CSS", "Appwrite"],
+    description: "This modern banking app allows you to access all of your accounts, accross all of your banks, from one secured dashboard.",
+    technologies: ["React", "NextJS", "TypeScript", "Tailwind CSS", "Appwrite", "Dwolla API", "Sentry for bug monitoring", "Plaid API"],
     link: "https://banking-next-khaki.vercel.app/",
     code: "https://github.com/mattbixby123/banking-next"
+  },
+  {
+    title: "Inventory Management",
+    emoji: "💭",
+    description: "AWS Cloud deployment project utilizing my recent AWS CCP certification to deploy a full stack application.",
+    technologies: ["Next JS", "TypeScript", "Tailwind CSS", "Redux Toolkit", "RTK Query", "Material UI Data Grid", "Node.js", "Prisma ORM", "AWS EC2", "AWS RDS", "AWS API Gateway", "AWS Amplify", "AWS S3"],
+    link: "https://main.d2y97dvo3t7six.amplifyapp.com/",
+    code: "https://github.com/mattbixby123/InventoryManagement"
   }
 ];
 

@@ -63,7 +63,7 @@ function Home() {
                 <br />
                 {/* ➤ Actively participating in Capital One case interview workshops to prepare for the hiring process.
                 <br /> */}
-                ➤ Currently studying for the AWS Certified Cloud Practitioner Exam
+                ➤ In October I passed the AWS Certified Cloud Practitioner Exam (CLP-CO2)
                 <br />
               </Typography>
             </ul>
