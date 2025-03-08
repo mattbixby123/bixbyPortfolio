@@ -69,9 +69,9 @@ const RetroHome = () => {
 
         <div className="sub-heading">CONTINUOUS LEARNING</div>
         <ul className="retro-list">
-          <li>➤ Self-taught Java OOP fundamentals and backend development with Spring Boot</li>
-          <li>➤ Self-taught TypeScript in two weeks to enhance Horizon Bank Management project</li>
-          <li>➤ Daily algorithm practice on leetcode to strengthen DSA/analytical knowledge</li>
+          <li>➤ Mastered Java OOP fundamentals and backend development with Spring Boot</li>
+          <li>➤ Learned TypeScript in two weeks to enhance Horizon Bank Management project</li>
+          <li>➤ Daily algorithm practice on LeetCode to strengthen DSA/analytical knowledge</li>
           <li>➤ AWS Certified Cloud Practitioner (CLP-CO2)</li>
         </ul>
 
