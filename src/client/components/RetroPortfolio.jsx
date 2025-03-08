@@ -65,10 +65,12 @@ const RetroPortfolio = () => {
 
   return (
     <div className="retro-container">
-      {/* Pixelated Header with terminal-style symbols */}
-      <div className="retro-header">
-        <div className="retro-title">matthew@bixby ~ %</div>
-      </div>
+      {/* Pixelated Header with terminal-style symbols - now wrapped in Link */}
+      <Link to="/" style={{ textDecoration: 'none' }}>
+        <div className="retro-header">
+          <div className="retro-title">matthew@bixby ~ %</div>
+        </div>
+      </Link>
 
       {/* Featured banner */}
       <div className="featured-banner">
