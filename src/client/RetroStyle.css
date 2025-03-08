@@ -32,7 +32,8 @@ html, body {
   margin-bottom: 30px; /* Reduced from 40px */
   margin-top: 20px;
   color: #f887ff; /* Light purple text */
-  animation: flicker 4s linear infinite;
+  animation: flicker 2s linear infinite; /* Faster animation (2s instead of 4s) */
+  text-shadow: 0 0 8px #f887ff; /* Add glow effect */
 }
 
 /* For the symbols at the top */
@@ -486,13 +487,15 @@ html, body {
   width: calc(100% + 40px);
 }
 
-/* Animation keyframes */
+/* Flicker animation keyframes */
 @keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
+    text-shadow: 0 0 8px #f887ff;
   }
-  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-    opacity: 0.8;
+  20%, 22%, 24%, 55% {
+    opacity: 0.3;
+    text-shadow: none;
   }
 }
 
