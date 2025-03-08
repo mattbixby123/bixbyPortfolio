@@ -78,7 +78,7 @@ const RetroHome = () => {
         <div className="sub-heading">EDUCATION</div>
         <ul className="retro-list">
           <li>➤ Bachelor of Science in Chemistry from Ithaca College c/o 2017</li>
-          <li>➤ Web Development Certificate from Fullstack Academy, June 2024</li>
+          <li>➤ Software Engineering Bootcamp Certificate from Fullstack Academy, June 2024</li>
         </ul>
       </div>
 
