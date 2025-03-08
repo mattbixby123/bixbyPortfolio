@@ -1,0 +1,587 @@
+/* Import pixelated font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #29132e !important; /* Dark purple background with !important */
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.retro-container {
+  max-width: 800px; /* Narrower container */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #29132e !important; /* Match the background color with !important */
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+.retro-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the header text */
+  margin-bottom: 30px; /* Reduced from 40px */
+  margin-top: 20px;
+  color: #f887ff; /* Light purple text */
+  animation: flicker 4s linear infinite;
+}
+
+/* For the symbols at the top */
+/* .retro-header:before {
+  content: "% ";
+  margin-right: 8px;
+  font-size: 24px;
+} */
+
+.retro-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+/* Featured banner */
+.featured-banner {
+  background-color: #321450; /* Deep purple background */
+  border: 1px solid #f887ff; /* Light purple border */
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 20px 0; /* Reduced from 30px */
+  text-align: center;
+  font-size: 14px;
+  color: #f887ff; /* Light purple text */
+  box-shadow: 0 0 10px rgba(248, 135, 255, 0.3);
+}
+
+/* Section headings */
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0 15px; /* Reduced from 40px 0 20px */
+  font-size: 18px;
+  color: #de004e; /* Hot pink for headings */
+  text-transform: uppercase;
+}
+
+.diamond {
+  color: #f887ff; /* Light purple for decorative elements */
+}
+
+/* Navigation cards grid */
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.nav-card {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  gap: 10px;
+  background-color: #321450; /* Deep purple background */
+  border: 1px solid #de004e; /* Hot pink border */
+  border-radius: 4px;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center; /* Center text */
+}
+
+.nav-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(222, 0, 78, 0.7); /* Hot pink glow */
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-icon {
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center icon */
+  align-items: center; /* Center icon vertically */
+}
+
+.nav-label {
+  font-size: 14px;
+}
+
+/* Compact navigation for inner pages */
+.compact-nav {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #f887ff; /* Light purple hover */
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #de004e; /* Hot pink for active */
+  border-bottom: 2px solid #de004e; /* Hot pink underline */
+}
+
+/* Content card */
+.pixel-card {
+  background-color: #321450; /* Deep purple background */
+  border: 1px solid #de004e; /* Hot pink border */
+  border-radius: 4px;
+  padding: 20px;
+  margin: 15px 0; /* Reduced from 20px */
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Sub headings */
+.sub-heading {
+  font-size: 14px;
+  color: #de004e; /* Hot pink for headings */
+  margin: 15px 0 10px; /* Reduced from 20px */
+}
+
+/* Lists */
+.retro-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.retro-list li {
+  margin-bottom: 10px;
+}
+
+/* Technologies badges */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+  justify-content: center; /* Center the tech badges */
+}
+
+.tech-badge {
+  background-color: #321450; /* Deep purple background */
+  border: 1px solid #f887ff; /* Light purple border */
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 10px;
+  cursor: default;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+  background-color: #860029; /* Deep red on hover */
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.tab-button {
+  background-color: #321450; /* Deep purple background */
+  border: 1px solid #de004e; /* Hot pink border */
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #860029; /* Deep red on hover */
+}
+
+.tab-button.active {
+  background-color: #de004e; /* Hot pink background for active */
+  color: #fff;
+}
+
+/* Interests grid */
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.interest-item {
+  background-color: #321450; /* Deep purple background */
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+/* Project cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 15px 0; /* Reduced from 20px */
+}
+
+.project-card {
+  background-color: #321450; /* Deep purple background */
+  border: 1px solid #de004e; /* Hot pink border */
+  border-radius: 4px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(222, 0, 78, 0.7); /* Hot pink glow */
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-emoji {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.project-title {
+  font-size: 14px;
+  color: #f887ff; /* Light purple */
+}
+
+.project-description {
+  font-size: 10px;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.tech-pill {
+  background-color: #321450; /* Deep purple background */
+  color: #f887ff; /* Light purple text */
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 8px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-button {
+  padding: 8px 15px;
+  font-size: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+.demo-btn {
+  background-color: #de004e; /* Hot pink background */
+  color: #fff;
+}
+
+.demo-btn:hover {
+  background-color: #f887ff; /* Light purple on hover */
+  color: #29132e; /* Dark purple text */
+  text-decoration: none;
+}
+
+.code-btn {
+  background-color: transparent;
+  border: 1px solid #de004e; /* Hot pink border */
+  color: #de004e; /* Hot pink text */
+}
+
+.code-btn:hover {
+  background-color: #321450; /* Deep purple background on hover */
+  color: #f887ff; /* Light purple text on hover */
+  text-decoration: none;
+}
+
+/* Contact form styles */
+.form-card {
+  max-width: 600px;
+  margin: 15px auto; /* Reduced from 20px */
+}
+
+.form-intro {
+  text-align: center;
+  margin-bottom: 15px; /* Reduced from 20px */
+}
+
+.retro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 10px;
+  color: #f887ff; /* Light purple label */
+}
+
+.retro-input, .retro-textarea {
+  background-color: #29132e; /* Dark purple background */
+  border: 1px solid #f887ff; /* Light purple border */
+  color: #fff;
+  padding: 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.retro-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.retro-button {
+  background-color: #de004e; /* Hot pink background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.retro-button:hover {
+  background-color: #f887ff; /* Light purple on hover */
+  color: #29132e; /* Dark purple text */
+}
+
+.status-message {
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.success {
+  background-color: #321450; /* Deep purple background */
+  color: #f887ff; /* Light purple text */
+}
+
+.error {
+  background-color: #860029; /* Deep red background */
+  color: #fff;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0 15px; /* Reduced from 40px 0 20px */
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #321450; /* Deep purple background */
+  border: 1px solid #f887ff; /* Light purple border */
+  border-radius: 4px;
+  color: #f887ff; /* Light purple text */
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(248, 135, 255, 0.7); /* Light purple glow */
+  color: #de004e; /* Hot pink text on hover */
+}
+
+.pixel-icon {
+  font-size: 16px;
+}
+
+/* Footer */
+.retro-footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 15px 0; /* Reduced from 20px */
+  font-size: 10px;
+  color: #f887ff; /* Light purple text */
+}
+
+/* Watermark */
+.watermark {
+  text-align: center;
+  font-size: 10px;
+  color: #321450; /* Deep purple text */
+  background-color: #29132e; /* Dark purple background */
+  border-top: 1px solid #f887ff; /* Light purple border */
+  padding: 8px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  width: calc(100% + 40px);
+}
+
+/* Animation keyframes */
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.8;
+  }
+}
+
+/* New styles for fixing centering issues */
+.category-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px; /* Reduced from 15px */
+  color: #fff;
+  font-size: 18px;
+}
+
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px; /* Reduced from 30px */
+}
+
+/* Additional fixes to ensure background color consistency */
+#root, body > div, html > body, .tech-categories {
+  background-color: #29132e !important;
+}
+
+/* Ensure all container divs have the correct background */
+body > * {
+  background-color: #29132e;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .retro-container {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .retro-header {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px; /* Reduced from 20px */
+  }
+  
+  .retro-title {
+    font-size: 18px;
+  }
+  
+  .featured-banner {
+    margin: 10px 0; /* Reduced from 15px */
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  .section-heading {
+    font-size: 14px;
+    margin: 20px 0 10px; /* Reduced from 25px 0 15px */
+  }
+  
+  .pixel-card {
+    padding: 15px;
+    font-size: 10px;
+  }
+  
+  .retro-list li {
+    font-size: 10px;
+  }
+  
+  .nav-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tech-grid {
+    gap: 6px;
+  }
+  
+  .tech-badge {
+    padding: 6px 10px;
+    font-size: 9px;
+  }
+  
+  .watermark {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .tab-button {
+    font-size: 10px;
+    padding: 8px 15px;
+  }
+}
