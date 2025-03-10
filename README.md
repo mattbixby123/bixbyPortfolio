@@ -2,7 +2,7 @@
 
 A retro-themed personal portfolio website built with React and styled with custom CSS.
 
-![Portfolio Screenshot](https://via.placeholder.com/800x400?text=Portfolio+Screenshot)
+![sitePreview.png](public/sitePreview.png)
 
 ## 📚 Overview
 

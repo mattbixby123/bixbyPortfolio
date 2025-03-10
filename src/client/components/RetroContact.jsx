@@ -71,7 +71,7 @@ const RetroContact = () => {
       {/* Pixelated Header with terminal-style symbols - now wrapped in Link */}
       <Link to="/" style={{ textDecoration: 'none' }}>
         <div className="retro-header">
-          <div className="retro-title">matthew@bixby ~ %</div>
+          <div className="retro-title">~ % cd matthew@bixby</div>
         </div>
       </Link>
 
