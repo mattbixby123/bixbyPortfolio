@@ -352,6 +352,12 @@ html, body {
   text-decoration: none;
 }
 
+.disabled-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Contact form styles */
 .form-card {
   max-width: 600px;

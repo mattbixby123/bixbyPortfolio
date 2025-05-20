@@ -18,7 +18,7 @@ const RetroPortfolio = () => {
       emoji: "📗",
       description: "This project is a web app for a fictitious library. This app allows you to browse a category of books that are fetched from an external API. As a registered user, you can checkout books and return them. You can also view your reserved books when accessing the account route.",
       technologies: ["React", "React Router", "React Hooks", "Redux Toolkit", "RTK Query", "Authentication", "HTML5", "CSS", "JavaSript"],
-      link: "https://66427587496fcb2483ba46cf--celebrated-crostata-770299.netlify.app/",
+      link: "#",
       code: "https://github.com/mattbixby123/B30A-BookBuddy-Bixby"
     },
     {
@@ -26,7 +26,7 @@ const RetroPortfolio = () => {
       emoji: "🧑‍🏫",
       description: "This Classroom Manager incorporates Prisma and Prisma Client, creating a Prisma schema to define instructor and student models, and developing the seed.js file to work seamlessly with Prisma Migrate. User passwords are encrypted using bcrypt before being transmitted to the server. Users have the option to register or log in with GitHub via OAuth to access the site.",
       technologies: ["React-Redux", "React-Router", "Redux Toolkit", "Express JS", "PostgreSQL", "Prisma ORM", "bcrypt encryption", "GitHub OAuth"],
-      link: "https://unit4-classroommanager-starter.onrender.com/",
+      link: "#",
       code: "https://github.com/mattbixby123/Unit4.ClassroomManager.Starter"
     },
     {
@@ -106,9 +106,14 @@ const RetroPortfolio = () => {
                 </div>
 
                 <div className="project-links">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-button demo-btn">
-                    View Demo
-                  </a>
+                  {project.link && project.link !== "#" ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-button demo-btn">
+                      View Demo
+                    </a>
+                  ) : (
+                    <span className="project-button demo-btn disabled-btn">View Demo</span>
+                  )}
+
                   <a href={project.code} target="_blank" rel="noopener noreferrer" className="project-button code-btn">
                     View Code
                   </a>
