@@ -58,7 +58,7 @@ const RetroPortfolio = () => {
       emoji: "💭",
       description: "This AWS Cloud deployment project utilizing my recent AWS CCP certification to deploy a full stack application.",
       technologies: ["NextJS", "TypeScript", "Tailwind CSS", "Redux Toolkit", "RTK Query", "Material UI Data Grid", "Node.js", "Prisma ORM", "AWS EC2", "AWS RDS", "AWS API Gateway", "AWS Amplify", "AWS S3"],
-      link: "https://main.d2y97dvo3t7six.amplifyapp.com/",
+      link: "https://youtu.be/rKDfmq2-L0I",
       code: "https://github.com/mattbixby123/InventoryManagement"
     }
   ];
