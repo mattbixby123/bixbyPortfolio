@@ -111,7 +111,7 @@ const RetroPortfolio = () => {
                       View Demo
                     </a>
                   ) : (
-                    <span className="project-button demo-btn disabled-btn">View Demo</span>
+                    <span className="project-button demo-btn disabled-btn">No Demo ATM</span>
                   )}
 
                   <a href={project.code} target="_blank" rel="noopener noreferrer" className="project-button code-btn">
