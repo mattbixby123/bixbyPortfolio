@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react'; // Remove useState since we're not using tabs
 import { Link } from 'react-router-dom';
 
 const RetroPortfolio = () => {
-  const [activeTab, setActiveTab] = useState('projects'); // 'projects' or 'about'
-  // Your projects from the original code
+  // Remove activeTab state since we only have projects now
   const projects = [
     {
       title: "Puppy Bowl",
@@ -17,7 +16,7 @@ const RetroPortfolio = () => {
       title: "Book Buddy",
       emoji: "📗",
       description: "This project is a web app for a fictitious library. This app allows you to browse a category of books that are fetched from an external API. As a registered user, you can checkout books and return them. You can also view your reserved books when accessing the account route.",
-      technologies: ["React", "React Router", "React Hooks", "Redux Toolkit", "RTK Query", "Authentication", "HTML5", "CSS", "JavaSript"],
+      technologies: ["React", "React Router", "React Hooks", "Redux Toolkit", "RTK Query", "Authentication", "HTML5", "CSS", "JavaScript"],
       link: "#",
       code: "https://github.com/mattbixby123/B30A-BookBuddy-Bixby"
     },
@@ -60,6 +59,22 @@ const RetroPortfolio = () => {
       technologies: ["NextJS", "TypeScript", "Tailwind CSS", "Redux Toolkit", "RTK Query", "Material UI Data Grid", "Node.js", "Prisma ORM", "AWS EC2", "AWS RDS", "AWS API Gateway", "AWS Amplify", "AWS S3"],
       link: "https://youtu.be/rKDfmq2-L0I",
       code: "https://github.com/mattbixby123/InventoryManagement"
+    },
+    {
+      title: "Spring Social Media API",
+      emoji: "🌱",
+      description: "Enterprise-grade social media backend API built with Spring Framework. Features complete user account management, CRUD operations for messages, and secure authentication. Demonstrates advanced Spring Boot, Spring Data JPA, and RESTful API design principles.",
+      technologies: ["Java", "Spring Boot", "Spring Framework", "Spring Data JPA", "Spring Web", "REST APIs", "Authentication"],
+      link: null,
+      code: "https://github.com/mattbixby123/spring-social-media-api"
+    },
+    {
+      title: "Social Media Blog API",
+      emoji: "☕",
+      description: "Full-stack backend API for social media application using core Java technologies. Implements user registration, authentication, message management, and data persistence. Built with Test-Driven Development methodology and clean architecture principles.",
+      technologies: ["Java", "Javalin", "JDBC", "Maven", "JUnit", "Mockito", "REST APIs", "TDD"],
+      link: null,
+      code: "https://github.com/mattbixby123/social-media-blog-api"
     }
   ];
 
@@ -77,100 +92,51 @@ const RetroPortfolio = () => {
         Project Portfolio
       </div>
 
-      {/* Projects Tab */}
-      {activeTab === 'projects' && (
-        <>
-          <div className="section-heading">
-            <span className="diamond">♦</span> Projects <span className="diamond">♦</span>
-          </div>
+      {/* Projects Section - Remove conditional rendering since we only have projects */}
+      <div className="section-heading">
+        <span className="diamond">♦</span> Projects <span className="diamond">♦</span>
+      </div>
 
-          <div className="projects-grid">
-            {projects.slice().reverse().map((project, index) => (
-              <div key={index} className="project-card">
-                <div className="project-header">
-                  <span className="project-emoji">{project.emoji}</span>
-                  <span className="project-title">{project.title}</span>
-                </div>
+      <div className="projects-grid">
+        {projects.slice().reverse().map((project, index) => (
+          <div key={index} className="project-card">
+            <div className="project-header">
+              <span className="project-emoji">{project.emoji}</span>
+              <span className="project-title">{project.title}</span>
+            </div>
 
-                <div className="project-description">
-                  {project.description}
-                </div>
+            <div className="project-description">
+              {project.description}
+            </div>
 
-                <div className="project-tech">
-                  {project.technologies.slice(0, 4).map((tech, idx) => (
-                    <span key={idx} className="tech-pill">{tech}</span>
-                  ))}
-                  {project.technologies.length > 4 && (
-                    <span className="tech-pill">+{project.technologies.length - 4}</span>
-                  )}
-                </div>
+            <div className="project-tech">
+              {project.technologies.slice(0, 4).map((tech, idx) => (
+                <span key={idx} className="tech-pill">{tech}</span>
+              ))}
+              {project.technologies.length > 4 && (
+                <span className="tech-pill">+{project.technologies.length - 4}</span>
+              )}
+            </div>
 
-                <div className="project-links">
-                  {project.link && project.link !== "#" ? (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-button demo-btn">
-                      View Demo
-                    </a>
-                  ) : (
-                    <span className="project-button demo-btn disabled-btn">No Demo ATM</span>
-                  )}
+            <div className="project-links">
+              {project.link && project.link !== "#" && project.link !== null ? (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-button demo-btn">
+                  View Demo
+                </a>
+              ) : (
+                <span className="project-button demo-btn disabled-btn">
+                  {project.technologies.some(tech => tech === 'Java' || tech.includes('Spring') || tech === 'Javalin') ?
+                    'Backend API - No Demo' : 'No Demo Available'}
+                </span>
+              )}
 
-                  <a href={project.code} target="_blank" rel="noopener noreferrer" className="project-button code-btn">
-                    View Code
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </>
-      )}
-
-      {/* About Me Tab */}
-      {activeTab === 'about' && (
-        <>
-          <div className="section-heading">
-            <span className="diamond">♦</span> About Me <span className="diamond">♦</span>
-          </div>
-
-          <div className="pixel-card">
-            <p>
-              Hello there 👋 ... I'm deeply passionate about full-stack software development and engineering.
-              I view it as the cornerstone of the future and continuously strive to enhance my skills in this field.
-              With an inherent love for learning, coupled with a natural aptitude for visualization and problem-solving,
-              I pride myself on being an exceptionally fast learner.
-            </p>
-
-            <div className="sub-heading">MY JOURNEY</div>
-            <p>
-              Recently, I completed the Web Development Program at Fullstack Academy, driven by my fervent belief in the
-              transformative power of web development. My studies encompass HTML5, CSS, JavaScript, Git and GitHub,
-              JavaScript APIs, React (including React Router and React Hooks), Redux, SQL, and Prisma ORM.
-            </p>
-
-            <div className="sub-heading">CONTINUOUS LEARNING</div>
-            <ul className="retro-list">
-              <li>➤ Completed J.P. Morgan Software Engineering Virtual Experience on Forage</li>
-              <li>➤ Self-taught TypeScript in two weeks to enhance Horizon Bank Management project</li>
-              <li>➤ Daily algorithm practice on leetcode to strengthen DSA/analytical knowledge</li>
-              <li>➤ AWS Certified Cloud Practitioner (CLP-CO2)</li>
-            </ul>
-
-            <div className="sub-heading">EDUCATION</div>
-            <ul className="retro-list">
-              <li>➤ Bachelor of Science in Chemistry from Ithaca College c/o 2017</li>
-              <li>➤ Web Development Certificate from Fullstack Academy, June 2024</li>
-            </ul>
-
-            <div className="sub-heading">INTERESTS</div>
-            <div className="interests-grid">
-              <span className="interest-item">☕ Coffee</span>
-              <span className="interest-item">📚 Reading sci-fi</span>
-              <span className="interest-item">🥾 Hiking</span>
-              <span className="interest-item">🌿 Plants</span>
+              <a href={project.code} target="_blank" rel="noopener noreferrer" className="project-button code-btn">
+                View Code
+              </a>
             </div>
           </div>
-        </>
-      )}
-
+        ))}
+      </div>
 
       {/* Navigation */}
       <div className="section-heading">
