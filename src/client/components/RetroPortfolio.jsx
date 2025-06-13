@@ -2,7 +2,7 @@ import React from 'react'; // Remove useState since we're not using tabs
 import { Link } from 'react-router-dom';
 
 const RetroPortfolio = () => {
-  // Remove activeTab state since we only have projects now
+
   const projects = [
     {
       title: "Puppy Bowl",
@@ -23,7 +23,7 @@ const RetroPortfolio = () => {
     {
       title: "Classroom Manager",
       emoji: "🧑‍🏫",
-      description: "This Classroom Manager incorporates Prisma and Prisma Client, creating a Prisma schema to define instructor and student models, and developing the seed.js file to work seamlessly with Prisma Migrate. User passwords are encrypted using bcrypt before being transmitted to the server. Users have the option to register or log in with GitHub via OAuth to access the site.",
+      description: "This Classroom Manager incorporates Prisma and Prisma Client, creating a schema to define instructor and student models. User passwords are encrypted using bcrypt, and users can register or log in with GitHub OAuth.",
       technologies: ["React-Redux", "React-Router", "Redux Toolkit", "Express JS", "PostgreSQL", "Prisma ORM", "bcrypt encryption", "GitHub OAuth"],
       link: "#",
       code: "https://github.com/mattbixby123/Unit4.ClassroomManager.Starter"
