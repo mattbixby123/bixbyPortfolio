@@ -5,45 +5,61 @@ const RetroHome = () => {
   // Updated technologies list organized by category
   const technologies = {
     frontend: [
-      'HTML5',
-      'CSS',
       'JavaScript',
       'TypeScript',
       'React',
+      'Next.js',
+      'Remix.js',
       'Redux Toolkit',
+      'React-Router',
       'Tailwind CSS',
+      'MUI Core'
     ],
     backend: [
       'Node.js',
-      'Express.js',
+      'Express',
       'Java',
       'Spring Boot',
+      'Spring Framework',
+      'Spring Security',
+      'Spring Data JPA',
+      'Javalin'
     ],
     database: [
       'PostgreSQL',
       'Prisma ORM',
-      'SQL',
+      'MySQL',
+      'JpaRepository'
     ],
-    infrastructure: [
-      'Git',
-      'AWS',
-      'Next.js',
-      'RESTful APIs',
+    'cloud & devops': [
+      'AWS Certified',
+      'GitHub OAuth',
+      'REST APIs'
+    ],
+    'security & integration': [
+      'Stripe payments',
+      'Dwolla ACH',
+      'Plaid API',
+      'bcrypt',
+      'Sentry.io monitoring'
+    ],
+    'testing & build': [
+      'Maven',
+      'JUnit',
+      'Mockito'
     ]
   };
 
   return (
     <div className="retro-container">
-      {/* Pixelated Header with terminal-style symbols - now wrapped in Link */}
-      {/* <Link to="/" style={{ textDecoration: 'none' }}> */}
+      {/* Pixelated Header with terminal-style symbols */}
       <div className="retro-header">
         <div className="retro-title">~ % cd matthew@bixby</div>
       </div>
-      {/* </Link> */}
 
       {/* Featured banner */}
       <div className="featured-banner">
-        Full Stack Engineer - AWS Certified ✓
+        Full Stack Engineer - Java | React | AWS Certified ✓
       </div>
 
       {/* Section Heading ABOUT ME */}
@@ -51,35 +67,43 @@ const RetroHome = () => {
         <span className="diamond">♦</span> ABOUT ME <span className="diamond">♦</span>
       </div>
 
-      {/* About Content */}
+      {/* About Content - Updated to match README */}
       <div className="pixel-card">
         <p>
-          Hello there 👋 ... I'm deeply passionate about full-stack software development and engineering.
-          I view it as the cornerstone of the future and continuously strive to enhance my skills in this field.
-          With an inherent love for learning, coupled with a natural aptitude for visualization and problem-solving,
-          I pride myself on being an exceptionally fast learner. Throughout my journey, I've yet to encounter
-          a technical challenge I couldn't overcome when given appropriate time and resources.
-        </p>
-        <p>
-          While I thrive in full-stack environments, I recognize the tech landscape is constantly evolving.
-          I remain flexible and committed to continuous learning as I seek my first professional software
-          engineering role. My chemistry background has instilled a methodical approach to problem-solving
-          that translates perfectly to coding challenges.
+          <strong>👋 Hi, I'm Matt (he/him)!</strong><br />
+          Full-stack software engineer with a chemistry background, combining analytical precision
+          with modern web development. Seeking to leverage my cross-stack experience to build
+          robust, scalable applications.
         </p>
 
-        <div className="sub-heading">CONTINUOUS LEARNING</div>
+        <div className="sub-heading">🌱 CURRENTLY</div>
         <ul className="retro-list">
-          <li>➤ Mastered Java OOP fundamentals and backend development with Spring Boot</li>
-          <li>➤ Learned TypeScript in two weeks to enhance Horizon Bank Management project</li>
-          <li>➤ Daily algorithm practice on LeetCode to strengthen DSA/analytical knowledge</li>
-          <li>➤ AWS Certified Cloud Practitioner (CLP-CO2)</li>
+          <li>➤ Completed comprehensive Java, Spring Framework, and SQL training</li>
+          <li>➤ Expanding into C# and ASP.NET for enterprise development</li>
+          <li>➤ Contributing to climate technology projects at Model.Earth</li>
+          <li>➤ Building BIXSTOCK - comprehensive inventory management system with AWS infrastructure</li>
+          <li>➤ Open to full-time Software Engineer roles</li>
         </ul>
 
-        <div className="sub-heading">EDUCATION</div>
+        <div className="sub-heading">📚 RECENT LEARNING</div>
+        <ul className="retro-list">
+          <li>➤ Java, Spring Boot, Spring Security, SQL fundamentals</li>
+          <li>➤ Currently exploring C# and ASP.NET Core</li>
+          <li>➤ AWS Cloud Architecture (Certified Cloud Practitioner)</li>
+        </ul>
+
+        <div className="sub-heading">🎓 EDUCATION</div>
         <ul className="retro-list">
           <li>➤ Bachelor of Science in Chemistry from Ithaca College c/o 2017</li>
           <li>➤ Software Engineering Bootcamp Certificate from Fullstack Academy, June 2024</li>
         </ul>
+
+        <div className="sub-heading">🌿 BEYOND CODING</div>
+        <p>
+          Wildlife biology, botany, nature photography, and open source contributions.
+          My chemistry lab background gives me a unique perspective on problem-solving
+          and analytical thinking.
+        </p>
       </div>
 
       {/* Section Heading TECH STACK */}
@@ -87,7 +111,7 @@ const RetroHome = () => {
         <span className="diamond">♦</span> TECH STACK <span className="diamond">♦</span>
       </div>
 
-      {/* Technologies - Updated with categories and centered layout */}
+      {/* Technologies - Updated with comprehensive categories */}
       <div className="tech-categories">
         {Object.entries(technologies).map(([category, techs]) => (
           <div key={category} className="tech-category">
