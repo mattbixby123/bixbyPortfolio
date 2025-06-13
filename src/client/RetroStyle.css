@@ -298,6 +298,20 @@ html, body {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  transition: all 0.3s ease; /* Add smooth transition */
+  cursor: pointer; /* Show it's interactive */
+  position: relative;
+}
+
+.project-description:hover {
+  -webkit-line-clamp: unset; /* Remove line clamp */
+  overflow: visible; /* Show all text */
+  background-color: rgba(248, 135, 255, 0.1); /* Light purple background - matches your theme */
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #f887ff; /* Light purple border - matches your theme colors */
+  box-shadow: 0 0 10px rgba(248, 135, 255, 0.3); /* Subtle glow effect */
+  z-index: 10; /* Ensure it appears above other elements */
 }
 
 .project-tech {
@@ -305,6 +319,7 @@ html, body {
   flex-wrap: wrap;
   gap: 5px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .tech-pill {
@@ -313,7 +328,56 @@ html, body {
   padding: 4px 8px;
   border-radius: 2px;
   font-size: 8px;
+  transition: all 0.2s ease;
 }
+
+/* Style for the "+X" counter pill */
+.tech-pill.counter {
+  background-color: #de004e; /* Hot pink to stand out */
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #f887ff;
+}
+
+.tech-pill.counter:hover {
+  background-color: #f887ff;
+  color: #29132e;
+  transform: translateY(-2px);
+}
+
+/* Hide extra pills by default */
+.tech-pill.hidden-pill {
+  display: none;
+}
+
+/* Hide counter and show all pills on hover */
+.project-tech:hover .tech-pill.counter {
+  display: none;
+}
+
+.project-tech:hover .tech-pill.hidden-pill {
+  display: inline-block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Add subtle hover effect for individual pills */
+.tech-pill:hover:not(.counter) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 8px rgba(248, 135, 255, 0.5);
+}
+
+/* Animation for showing hidden pills */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
 
 .project-links {
   display: flex;

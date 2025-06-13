@@ -66,7 +66,7 @@ const RetroPortfolio = () => {
       description: "Enterprise-grade social media backend API built with Spring Framework. Features complete user account management, CRUD operations for messages, and secure authentication. Demonstrates advanced Spring Boot, Spring Data JPA, and RESTful API design principles.",
       technologies: ["Java", "Spring Boot", "Spring Framework", "Spring Data JPA", "Spring Web", "REST APIs", "Authentication"],
       link: null,
-      code: "https://github.com/mattbixby123/spring-social-media-api"
+      code: "https://github.com/mattbixby123/mattbixby123-pep-spring-project"
     },
     {
       title: "Social Media Blog API",
@@ -74,7 +74,7 @@ const RetroPortfolio = () => {
       description: "Full-stack backend API for social media application using core Java technologies. Implements user registration, authentication, message management, and data persistence. Built with Test-Driven Development methodology and clean architecture principles.",
       technologies: ["Java", "Javalin", "JDBC", "Maven", "JUnit", "Mockito", "REST APIs", "TDD"],
       link: null,
-      code: "https://github.com/mattbixby123/social-media-blog-api"
+      code: "https://github.com/mattbixby123/mattbixby123-pep-project"
     }
   ];
 
@@ -109,13 +109,31 @@ const RetroPortfolio = () => {
               {project.description}
             </div>
 
-            <div className="project-tech">
+            {/* <div className="project-tech">
               {project.technologies.slice(0, 4).map((tech, idx) => (
                 <span key={idx} className="tech-pill">{tech}</span>
               ))}
               {project.technologies.length > 4 && (
                 <span className="tech-pill">+{project.technologies.length - 4}</span>
               )}
+            </div> */}
+            <div className="project-tech">
+              {/* Show first 4 technologies */}
+              {project.technologies.slice(0, 4).map((tech, idx) => (
+                <span key={idx} className="tech-pill">{tech}</span>
+              ))}
+
+              {/* Show +X counter if there are more than 4 */}
+              {project.technologies.length > 4 && (
+                <span className="tech-pill counter">
+                  +{project.technologies.length - 4}
+                </span>
+              )}
+
+              {/* Hidden pills that show on hover */}
+              {project.technologies.slice(4).map((tech, idx) => (
+                <span key={idx + 4} className="tech-pill hidden-pill">{tech}</span>
+              ))}
             </div>
 
             <div className="project-links">
