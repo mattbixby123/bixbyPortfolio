@@ -75,6 +75,14 @@ const RetroPortfolio = () => {
       technologies: ["Java", "Javalin", "JDBC", "Maven", "JUnit", "Mockito", "REST APIs", "TDD"],
       link: null,
       code: "https://github.com/mattbixby123/mattbixby123-pep-project"
+    },
+    {
+      title: "Weather App",
+      emoji: "🌤️",
+      description: "A responsive weather application providing real-time weather data and 5-day forecasts for any location worldwide. Features location search, current location detection, detailed weather metrics, and an intuitive user interface with smooth loading states.",
+      technologies: ["NextJS 15", "React 19", "TypeScript", "Tailwind CSS", "TanStack React Query", "Jotai", "Axios", "OpenWeatherMap API", "date-fns"],
+      link: "https://weather-91eymv0ih-matthew-bixbys-projects.vercel.app/",
+      code: "https://github.com/mattbixby123/weather-app"
     }
   ];
 
