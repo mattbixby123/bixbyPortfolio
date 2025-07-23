@@ -108,6 +108,23 @@ const RetroPortfolio = () => {
         Project Portfolio
       </div>
 
+      {/* Navigation */}
+      <div className="section-heading">
+        <span className="diamond">♦</span> NAVIGATION <span className="diamond">♦</span>
+      </div>
+
+      <div className="nav-grid">
+        <Link to="/" className="nav-card">
+          <span className="nav-icon">🏡</span>
+          <span className="nav-label">Home</span>
+        </Link>
+
+        <Link to="/contact" className="nav-card">
+          <span className="nav-icon">✉️</span>
+          <span className="nav-label">Contact</span>
+        </Link>
+      </div>
+
       {/* Projects Section - Remove conditional rendering since we only have projects */}
       <div className="section-heading">
         <span className="diamond">♦</span> Projects <span className="diamond">♦</span>
