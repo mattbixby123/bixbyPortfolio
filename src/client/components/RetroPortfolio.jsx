@@ -83,6 +83,14 @@ const RetroPortfolio = () => {
       technologies: ["NextJS 15", "React 19", "TypeScript", "Tailwind CSS", "TanStack React Query", "Jotai", "Axios", "OpenWeatherMap API", "date-fns"],
       link: "https://weather-91eymv0ih-matthew-bixbys-projects.vercel.app/",
       code: "https://github.com/mattbixby123/weather-app"
+    },
+    {
+      title: "Investment Portfolio Tracker (Backend)",
+      emoji: "📈",
+      description: "A comprehensive investment portfolio tracking system built with enterprise-grade Spring architecture. Integrates with Alpha Vantage API for real-time stock data and market information. Features secure user authentication with JWT tokens, portfolio management, investment tracking, and robust data persistence. Includes comprehensive test coverage for controller and service layers using modern testing practices.",
+      technologies: ["Java 17", "Spring Boot", "Spring Security", "Spring Data JPA", "PostgreSQL", "JWT Authentication", "Flyway Migration", "Alpha Vantage API", "Maven", "JUnit 5", "Testcontainers", "Lombok"],
+      link: null,
+      code: "https://github.com/mattbixby123/portfolio-tracker-backend"
     }
   ];
 
