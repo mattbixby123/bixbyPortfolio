@@ -62,6 +62,24 @@ const RetroHome = () => {
         Full Stack Engineer - Java | React | AWS Certified ✓
       </div>
 
+
+      {/* Navigation */}
+      <div className="section-heading">
+        <span className="diamond">♦</span> NAVIGATION <span className="diamond">♦</span>
+      </div>
+
+      <div className="nav-grid">
+        <Link to="/portfolio" className="nav-card">
+          <span className="nav-icon">💼</span>
+          <span className="nav-label">Portfolio</span>
+        </Link>
+
+        <Link to="/contact" className="nav-card">
+          <span className="nav-icon">✉️</span>
+          <span className="nav-label">Contact</span>
+        </Link>
+      </div>
+
       {/* Section Heading ABOUT ME */}
       <div className="section-heading">
         <span className="diamond">♦</span> ABOUT ME <span className="diamond">♦</span>
