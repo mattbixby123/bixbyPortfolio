@@ -6,6 +6,7 @@ const RetroPortfolio = () => {
   const projects = [
     {
       title: "Puppy Bowl",
+      date: "May 2024",
       emoji: "🐶",
       description: "This application is for managing a Puppy Bowl competition. Users will be able to view a list of players competing in the bowl, access detailed information about each player, create new players through a form, search for specific players, and delete players they have created.",
       technologies: ["React-Redux", "React Router", "Redux Toolkit", "HTML5", "CSS", "JavaScript", "JavaScript APIs"],
@@ -13,23 +14,8 @@ const RetroPortfolio = () => {
       code: "https://github.com/mattbixby123/PuppyBowlSPA"
     },
     {
-      title: "Book Buddy",
-      emoji: "📗",
-      description: "This project is a web app for a fictitious library. This app allows you to browse a category of books that are fetched from an external API. As a registered user, you can checkout books and return them. You can also view your reserved books when accessing the account route.",
-      technologies: ["React", "React Router", "React Hooks", "Redux Toolkit", "RTK Query", "Authentication", "HTML5", "CSS", "JavaScript"],
-      link: "#",
-      code: "https://github.com/mattbixby123/B30A-BookBuddy-Bixby"
-    },
-    {
-      title: "Classroom Manager",
-      emoji: "🧑‍🏫",
-      description: "This Classroom Manager incorporates Prisma and Prisma Client, creating a schema to define instructor and student models. User passwords are encrypted using bcrypt, and users can register or log in with GitHub OAuth.",
-      technologies: ["React-Redux", "React-Router", "Redux Toolkit", "Express JS", "PostgreSQL", "Prisma ORM", "bcrypt encryption", "GitHub OAuth"],
-      link: "#",
-      code: "https://github.com/mattbixby123/Unit4.ClassroomManager.Starter"
-    },
-    {
-      title: "Full Stack eCommerce",
+      title: "Retro Rag Reads | eCommerce Platform",
+      date: "Apr 2025",
       emoji: "💸",
       description: "The capstone project is an e-commerce platform for buying vintage paper media (books, comics, and magazines). It offers customers and admins a wide array of features and tools. The project is meticulously crafted for scalability, performance, and user satisfaction.",
       technologies: ["React-Redux", "React-Router", "Redux Toolkit", "Express JS", "PostgreSQL", "Prisma ORM", "bcrypt encryption", "MUI Styling & Pagination", "STRIPE payment processing"],
@@ -38,6 +24,7 @@ const RetroPortfolio = () => {
     },
     {
       title: "moodTrak",
+      date: "Aug 2024",
       emoji: "📆",
       description: "How do you feel today? This is a daily mood tracking app that was completed in a single weekend. This app allows you to log your daily mood and see your past records.",
       technologies: ["React", "NextJS", "Tailwind CSS", "Firebase", "Netlify deployment"],
@@ -45,7 +32,8 @@ const RetroPortfolio = () => {
       code: "https://github.com/mattbixby123/moodtrak"
     },
     {
-      title: "Horizon Bank Acct. Manager",
+      title: "Horizon Bank | Account Manager",
+      date: "Aug 2024",
       emoji: "🏦",
       description: "This modern banking app allows you to access all of your accounts, accross all of your banks, from one secured dashboard.",
       technologies: ["React", "NextJS", "TypeScript", "Tailwind CSS", "Appwrite", "Dwolla API", "Sentry for bug monitoring", "Plaid API"],
@@ -53,7 +41,8 @@ const RetroPortfolio = () => {
       code: "https://github.com/mattbixby123/banking-next"
     },
     {
-      title: "Inventory Management",
+      title: "BIXSTOCK | Inventory Management System",
+      date: "Dec 2024",
       emoji: "💭",
       description: "This AWS Cloud deployment project utilizing my recent AWS CCP certification to deploy a full stack application.",
       technologies: ["NextJS", "TypeScript", "Tailwind CSS", "Redux Toolkit", "RTK Query", "Material UI Data Grid", "Node.js", "Prisma ORM", "AWS EC2", "AWS RDS", "AWS API Gateway", "AWS Amplify", "AWS S3"],
@@ -62,6 +51,7 @@ const RetroPortfolio = () => {
     },
     {
       title: "Spring Social Media API",
+      date: "May 2025",
       emoji: "🌱",
       description: "Enterprise-grade social media backend API built with Spring Framework. Features complete user account management, CRUD operations for messages, and secure authentication. Demonstrates advanced Spring Boot, Spring Data JPA, and RESTful API design principles.",
       technologies: ["Java", "Spring Boot", "Spring Framework", "Spring Data JPA", "Spring Web", "REST APIs", "Authentication"],
@@ -70,6 +60,7 @@ const RetroPortfolio = () => {
     },
     {
       title: "Social Media Blog API",
+      date: "Apr 2025",
       emoji: "☕",
       description: "Full-stack backend API for social media application using core Java technologies. Implements user registration, authentication, message management, and data persistence. Built with Test-Driven Development methodology and clean architecture principles.",
       technologies: ["Java", "Javalin", "JDBC", "Maven", "JUnit", "Mockito", "REST APIs", "TDD"],
@@ -78,6 +69,7 @@ const RetroPortfolio = () => {
     },
     {
       title: "Weather App",
+      date: "Jul 2025",
       emoji: "🌤️",
       description: "A responsive weather application providing real-time weather data and 5-day forecasts for any location worldwide. Features location search, current location detection, detailed weather metrics, and an intuitive user interface with smooth loading states.",
       technologies: ["NextJS 15", "React 19", "TypeScript", "Tailwind CSS", "TanStack React Query", "Jotai", "Axios", "OpenWeatherMap API", "date-fns"],
@@ -86,6 +78,7 @@ const RetroPortfolio = () => {
     },
     {
       title: "Investment Portfolio Tracker (Backend)",
+      date: "Jun 2025",
       emoji: "📈",
       description: "Built with Spring architecture. Integrates with Alpha Vantage API for stock market info. Features user authentication with JWT tokens, portfolio management, investment tracking,  data persistence. Includes test coverage for controller & service layers.",
       technologies: ["Java 17", "Spring Boot", "Spring Security", "Spring Data JPA", "PostgreSQL", "JWT Authentication", "Flyway Migration", "Alpha Vantage API", "Maven", "JUnit 5", "Testcontainers", "Lombok"],
@@ -136,6 +129,8 @@ const RetroPortfolio = () => {
             <div className="project-header">
               <span className="project-emoji">{project.emoji}</span>
               <span className="project-title">{project.title}</span>
+              {/* this line below allows for projects with a date. it also parses the space between the month and year to display as the date as two lines*/}
+              {project.date && <span className="project-date">{project.date.replace(' ', '\n')}</span>}
             </div>
 
             <div className="project-description">

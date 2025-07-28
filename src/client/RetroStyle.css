@@ -289,6 +289,17 @@ html, body {
   color: #f887ff; /* Light purple */
 }
 
+.project-date {
+  font-size: 8px;
+  color: #f887ff; /* Light purple to match your theme */
+  margin-left: auto; /* Pushes date to the right */
+  padding-left: 10px; /* Spacing from title */
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  white-space: pre-line; /* Allows \n to create line breaks */
+  text-align: right;
+  line-height: 1.2;
+}
 .project-description {
   font-size: 10px;
   line-height: 1.6;
