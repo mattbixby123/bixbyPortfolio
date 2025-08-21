@@ -2,51 +2,54 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const RetroHome = () => {
-  // Updated technologies list organized by category
+  // Updated technologies list organized by category - aligned with resume
   const technologies = {
-    frontend: [
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Next.js',
-      'Remix.js',
-      'Redux Toolkit',
-      'React-Router',
-      'Tailwind CSS',
-      'MUI Core'
-    ],
     backend: [
-      'Node.js',
-      'Express',
-      'Java',
+      'Java 17',
       'Spring Boot',
-      'Spring Framework',
       'Spring Security',
       'Spring Data JPA',
-      'Javalin'
+      'REST APIs',
+      'Microservices',
+      'Node.js',
+      'Express.js'
+    ],
+    frontend: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Redux Toolkit',
+      'Tailwind CSS'
+    ],
+    'cloud & infrastructure': [
+      'AWS (EC2, RDS, S3)',
+      'Docker',
+      'Linux/Fedora',
+      'VPS deployment',
+      'nginx',
+      'SSL/TLS'
     ],
     database: [
       'PostgreSQL',
-      'Prisma ORM',
       'MySQL',
-      'JpaRepository'
+      'Spring Data JPA',
+      'Prisma ORM'
     ],
-    'cloud & devops': [
-      'AWS Certified',
-      'GitHub OAuth',
-      'REST APIs'
-    ],
-    'security & integration': [
-      'Stripe payments',
-      'Dwolla ACH',
-      'Plaid API',
-      'bcrypt',
-      'Sentry.io monitoring'
-    ],
-    'testing & build': [
-      'Maven',
+    'testing & tools': [
       'JUnit',
-      'Mockito'
+      'Mockito',
+      'Git',
+      'Maven',
+      'Swagger',
+      'JWT',
+      'Postman'
+    ],
+    'integrations & security': [
+      'Plaid API',
+      'Dwolla ACH',
+      'Sentry.io',
+      'OAuth',
+      'bcrypt'
     ]
   };
 
@@ -59,7 +62,7 @@ const RetroHome = () => {
 
       {/* Featured banner */}
       <div className="featured-banner">
-        Full Stack Engineer - Java | React | AWS Certified ✓
+        Full Stack Software Engineer - Java | Spring Boot | React | AWS Certified ✓
       </div>
 
 
@@ -85,28 +88,30 @@ const RetroHome = () => {
         <span className="diamond">♦</span> ABOUT ME <span className="diamond">♦</span>
       </div>
 
-      {/* About Content - Updated to match README */}
+      {/* About Content - Updated to match current focus */}
       <div className="pixel-card">
         <p>
           <strong>👋 Hi, I'm Matt (he/him)!</strong><br />
           Full-stack software engineer with a chemistry background, combining analytical precision
-          with modern web development. Seeking to leverage my cross-stack experience to build
-          robust, scalable applications.
+          with production-ready deployment expertise. Seeking to leverage my backend and infrastructure
+          experience to build robust, scalable applications.
         </p>
 
         <div className="sub-heading">🌱 CURRENTLY</div>
         <ul className="retro-list">
-          <li>➤ Completed comprehensive Java, Spring Framework, and SQL training</li>
-          <li>➤ Expanding into C# and ASP.NET for enterprise development</li>
+          <li>➤ Backend Java Intern at Revature - developing enterprise Spring Boot microservices</li>
+          <li>➤ Mastering Docker containerization and Linux/VPS deployment with nginx reverse proxy</li>
+          <li>➤ Building production infrastructure for scalable web applications</li>
           <li>➤ Contributing to climate technology projects at Model.Earth</li>
-          <li>➤ Building BIXSTOCK - comprehensive inventory management system with AWS infrastructure</li>
+          <li>➤ Optimizing API performance and implementing zero-downtime deployment strategies</li>
           <li>➤ Open to full-time Software Engineer roles</li>
         </ul>
 
         <div className="sub-heading">📚 RECENT LEARNING</div>
         <ul className="retro-list">
-          <li>➤ Java, Spring Boot, Spring Security, SQL fundamentals</li>
-          <li>➤ Currently exploring C# and ASP.NET Core</li>
+          <li>➤ Java 17, Spring Boot ecosystem, comprehensive testing with JUnit/Mockito</li>
+          <li>➤ Production deployment: Docker, nginx, SSL/TLS, Linux server management</li>
+          <li>➤ Infrastructure optimization: load balancing, caching, performance tuning</li>
           <li>➤ AWS Cloud Architecture (Certified Cloud Practitioner)</li>
         </ul>
 
@@ -119,8 +124,8 @@ const RetroHome = () => {
         <div className="sub-heading">🌿 BEYOND CODING</div>
         <p>
           Wildlife biology, botany, nature photography, and open source contributions.
-          My chemistry lab background gives me a unique perspective on problem-solving
-          and analytical thinking.
+          My chemistry lab background gives me a unique perspective on problem-solving,
+          systematic testing, and performance optimization.
         </p>
       </div>
 
