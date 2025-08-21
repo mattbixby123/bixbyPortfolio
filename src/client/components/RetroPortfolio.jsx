@@ -42,11 +42,11 @@ const RetroPortfolio = () => {
     },
     {
       title: "BIXSTOCK | Inventory Management System",
-      date: "Dec 2024",
-      emoji: "💭",
-      description: "This AWS Cloud deployment project utilizing my recent AWS CCP certification to deploy a full stack application.",
-      technologies: ["NextJS", "TypeScript", "Tailwind CSS", "Redux Toolkit", "RTK Query", "Material UI Data Grid", "Node.js", "Prisma ORM", "AWS EC2", "AWS RDS", "AWS API Gateway", "AWS Amplify", "AWS S3"],
-      link: "https://youtu.be/rKDfmq2-L0I",
+      date: "Sep 2024 - Aug 2025",
+      emoji: "📦",
+      description: "Scalable full-stack inventory management system with production VPS infrastructure. Implemented Docker containerization and nginx reverse proxy, achieving 30% reduction in API response times through caching and load balancing. Features zero-downtime deployment pipeline and comprehensive Linux server configuration with firewall management and SSL termination.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Express.js", "Prisma ORM", "PostgreSQL", "Docker", "nginx", "Linux/Fedora", "SSL/TLS", "AWS RDS"],
+      link: "https://buoy.ufixu.net:8443/",
       code: "https://github.com/mattbixby123/InventoryManagement"
     },
     {
@@ -78,10 +78,10 @@ const RetroPortfolio = () => {
     },
     {
       title: "Investment Portfolio Tracker (Backend)",
-      date: "Jun 2025",
+      date: "Jun 2025 - Aug 2025",
       emoji: "📈",
-      description: "Built with Spring architecture. Integrates with Alpha Vantage API for stock market info. Features user authentication with JWT tokens, portfolio management, investment tracking,  data persistence. Includes test coverage for controller & service layers.",
-      technologies: ["Java 17", "Spring Boot", "Spring Security", "Spring Data JPA", "PostgreSQL", "JWT Authentication", "Flyway Migration", "Alpha Vantage API", "Maven", "JUnit 5", "Testcontainers", "Lombok"],
+      description: "High-performance Spring Boot REST API with JWT authentication achieving sub-1 second latency for real-time stock data processing. Implemented comprehensive testing strategy with 85% code coverage using JUnit and Mockito. Created detailed Swagger API documentation reducing future frontend integration time by 50%. Focused on backend architecture, security, and performance optimization.",
+      technologies: ["Java 17", "Spring Boot", "Spring Security", "Spring Data JPA", "PostgreSQL", "JWT Authentication", "JUnit", "Mockito", "Swagger", "Alpha Vantage API", "Maven", "Flyway Migration", "Testcontainers"],
       link: null,
       code: "https://github.com/mattbixby123/portfolio-tracker-backend"
     }
