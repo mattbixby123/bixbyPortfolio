@@ -46,7 +46,7 @@ const RetroPortfolio = () => {
       emoji: "📦",
       description: "Scalable full-stack inventory management system with production VPS infrastructure. Implemented Docker containerization and nginx reverse proxy, achieving 30% reduction in API response times through caching and load balancing. Features zero-downtime deployment pipeline and comprehensive Linux server configuration with firewall management and SSL termination.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Express.js", "Prisma ORM", "PostgreSQL", "Docker", "nginx", "Linux/Fedora", "SSL/TLS", "AWS RDS"],
-      link: "https://buoy.ufixu.net",
+      link: "https://inventory.matthewbixby.com",
       code: "https://github.com/mattbixby123/InventoryManagement"
     },
     {
