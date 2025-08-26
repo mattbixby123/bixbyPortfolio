@@ -80,8 +80,8 @@ const RetroPortfolio = () => {
       title: "Investment Portfolio Tracker (Backend)",
       date: "Jun 2025 - Aug 2025",
       emoji: "📈",
-      description: "High-performance Spring Boot REST API with JWT authentication achieving sub-1 second latency for real-time stock data processing. Implemented comprehensive testing strategy with 85% code coverage using JUnit and Mockito. Created detailed Swagger API documentation reducing future frontend integration time by 50%. Focused on backend architecture, security, and performance optimization.",
-      technologies: ["Java 17", "Spring Boot", "Spring Security", "Spring Data JPA", "PostgreSQL", "JWT Authentication", "JUnit", "Mockito", "Swagger", "Alpha Vantage API", "Maven", "Flyway Migration", "Testcontainers"],
+      description: "Enterprise-grade Spring Boot REST API with real-time WebSocket streaming for live stock price updates. Features JWT authentication, comprehensive PostgreSQL data persistence, and dual API integration (Alpha Vantage REST + Finnhub WebSocket). Implemented robust testing strategy with 85% code coverage and detailed Swagger documentation. Demonstrates full-stack backend architecture with real-time capabilities.",
+      technologies: ["Java 21", "Spring Boot", "Spring Security", "WebSocket", "Spring Data JPA", "PostgreSQL", "JWT Authentication", "JUnit", "Mockito", "Swagger", "Alpha Vantage API", "Finnhub API", "Maven", "Flyway Migration", "Testcontainers", "Real-time Streaming"],
       link: null,
       code: "https://github.com/mattbixby123/portfolio-tracker-backend"
     }
