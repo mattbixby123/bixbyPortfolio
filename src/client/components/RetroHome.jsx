@@ -5,7 +5,7 @@ const RetroHome = () => {
   // Updated technologies list organized by category - aligned with resume
   const technologies = {
     backend: [
-      'Java 17',
+      'Java 21',
       'Spring Boot',
       'Spring Security',
       'Spring Data JPA',
@@ -91,41 +91,41 @@ const RetroHome = () => {
       {/* About Content - Updated to match current focus */}
       <div className="pixel-card">
         <p>
-          <strong>👋 Hi, I'm Matt (he/him)!</strong><br />
-          Full-stack software engineer with a chemistry background, combining analytical precision
-          with production-ready deployment expertise. Seeking to leverage my backend and infrastructure
-          experience to build robust, scalable applications.
+          <strong className='sub-heading'>👋 Hi, I'm Matt (he/him)!</strong><br />
+          Full-stack software engineer focused on building and deploying <strong>production-grade Java/Spring applications</strong>
+          with robust infrastructure on AWS and Linux VPS environments. I combine backend optimization, secure deployment practices,
+          and systematic problem-solving to deliver scalable, high-performance systems.
         </p>
 
-        <div className="sub-heading">🌱 CURRENTLY</div>
+        <div className="sub-heading">🛠️ WHAT I BUILD</div>
         <ul className="retro-list">
-          <li>➤ Backend Java Intern at Revature - developing enterprise Spring Boot microservices</li>
-          <li>➤ Mastering Docker containerization and Linux/VPS deployment with nginx reverse proxy</li>
-          <li>➤ Building production infrastructure for scalable web applications</li>
-          <li>➤ Contributing to climate technology projects at Model.Earth</li>
-          <li>➤ Optimizing API performance and implementing zero-downtime deployment strategies</li>
-          <li>➤ Open to full-time Software Engineer roles</li>
+          <li>➤ RESTful microservices with Spring Boot, JPA, and JWT authentication</li>
+          <li>➤ Full-stack applications using React, Next.js, and TypeScript</li>
+          <li>➤ Secure, high-availability infrastructure with Docker, nginx, and Let's Encrypt SSL</li>
+          <li>➤ Real-time systems using WebSockets and event-driven architecture</li>
         </ul>
 
-        <div className="sub-heading">📚 RECENT LEARNING</div>
+        <div className="sub-heading">🚀 CURRENT FOCUS</div>
         <ul className="retro-list">
-          <li>➤ Java 17, Spring Boot ecosystem, comprehensive testing with JUnit/Mockito</li>
-          <li>➤ Production deployment: Docker, nginx, SSL/TLS, Linux server management</li>
-          <li>➤ Infrastructure optimization: load balancing, caching, performance tuning</li>
-          <li>➤ AWS Cloud Architecture (Certified Cloud Practitioner)</li>
+          <li>➤ Backend Java Intern at Revature: building enterprise Spring Boot microservices</li>
+          <li>➤ Optimizing API performance — investigating cold-start behavior and load resilience</li>
+          <li>➤ Implementing zero-downtime deployments and CI/CD pipelines</li>
+          <li>➤ Strengthening cloud architecture skills on AWS (EC2, RDS, S3, API Gateway)</li>
+          <li>➤ Open to full-time Full Stack or Backend Engineer roles</li>
         </ul>
 
-        <div className="sub-heading">🎓 EDUCATION</div>
+        <div className="sub-heading">🎓 EDUCATION & CREDENTIALS</div>
         <ul className="retro-list">
-          <li>➤ Bachelor of Science in Chemistry from Ithaca College c/o 2017</li>
-          <li>➤ Software Engineering Bootcamp Certificate from Fullstack Academy, June 2024</li>
+          <li>➤ AWS Certified Cloud Practitioner (2024)</li>
+          <li>➤ Software Engineering Bootcamp, Fullstack Academy (2024)</li>
+          <li>➤ B.S. in Chemistry, Ithaca College (2017, GPA: 3.5)</li>
         </ul>
 
-        <div className="sub-heading">🌿 BEYOND CODING</div>
+        <div className="sub-heading">🔍 WHY IT ALL FITS</div>
         <p>
-          Wildlife biology, botany, nature photography, and open source contributions.
-          My chemistry lab background gives me a unique perspective on problem-solving,
-          systematic testing, and performance optimization.
+          My background in chemistry trained me in rigorous testing, data analysis, and methodical troubleshooting —
+          skills I now apply to software performance, deployment reliability, and system design.
+          I thrive where code meets infrastructure.
         </p>
       </div>
 
