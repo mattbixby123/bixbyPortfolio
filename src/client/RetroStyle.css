@@ -107,6 +107,29 @@ html, body {
   text-decoration: none;
 }
 
+/* Style for disabled navigation cards */
+.nav-card-disabled {
+  background-color: #321450; /* Same deep purple background */
+  border: 1px solid #666; /* Greyed out border */
+  color: #666; /* Greyed out text */
+  cursor: not-allowed; /* Show not-allowed cursor */
+  opacity: 0.6; /* Make it look faded */
+  transform: none; /* Override any hover transforms */
+  box-shadow: none; /* Remove any hover shadows */
+}
+
+.nav-card-disabled:hover {
+  transform: none; /* Ensure no transform on hover */
+  box-shadow: none; /* Ensure no shadow on hover */
+  color: #666; /* Ensure text stays grey */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.nav-card-disabled .nav-icon,
+.nav-card-disabled .nav-label {
+  color: #666; /* Ensure icons and labels are grey */
+}
+
 .nav-icon {
   font-size: 18px;
   width: 30px;
@@ -254,6 +277,7 @@ html, body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  padding: 20px;
   margin: 15px 0; /* Reduced from 20px */
 }
 
@@ -448,6 +472,49 @@ html, body {
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+/* Pricing / Freelance section styles */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.pricing-item {
+  background: rgba(102, 126, 234, 0.1);
+  border: 2px solid var(--primary-color);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.pricing-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.pricing-cost {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.pricing-normal {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+  display: block;
+  margin-top: 0.25rem;
 }
 
 /* Contact form styles */

@@ -1,22 +1,29 @@
-// In App.jsx
+// App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
-// New retro-themed components
+// retro-themed components
 import RetroHome from './components/RetroHome';
 import RetroPortfolio from './components/RetroPortfolio';
-import RetroContact from './components/RetroContact';
+import RetroContact from './components/RetroContact'
+import RetroFreelance from './components/RetroFreelance';
 
 // Import RetroStyle.css
 import './RetroStyle.css';
 
 function App() {
+  const location = useLocation(); // Get the current location object
+
   return (
-    <Routes>
-      <Route path="/" element={<RetroHome />} />
-      <Route path="/portfolio" element={<RetroPortfolio />} />
-      <Route path="/contact" element={<RetroContact />} />
-    </Routes>
+    <>
+      {/* Pass the pathname from the location object to each route element */}
+      <Routes>
+        <Route path="/" element={<RetroHome currentPath={location.pathname} />} />
+        <Route path="/portfolio" element={<RetroPortfolio currentPath={location.pathname} />} />
+        <Route path="/contact" element={<RetroContact currentPath={location.pathname} />} />
+        <Route path="/freelance" element={<RetroFreelance currentPath={location.pathname} />} />
+      </Routes>
+    </>
   );
 }
 

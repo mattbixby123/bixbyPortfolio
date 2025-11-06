@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const RetroHome = () => {
+const RetroHome = ({ currentPath }) => {
+  // Helper function to determine if a link is active
+  const isLinkActive = (path) => currentPath === path;
+
   // Updated technologies list organized by category - aligned with resume
   const technologies = {
     backend: [
-      'Java 21',
+      'Java',
       'Spring Boot',
       'Spring Security',
       'Spring Data JPA',
@@ -72,15 +75,57 @@ const RetroHome = () => {
       </div>
 
       <div className="nav-grid">
-        <Link to="/portfolio" className="nav-card">
-          <span className="nav-icon">💼</span>
-          <span className="nav-label">Portfolio</span>
-        </Link>
+        {/* Home Link */}
+        {isLinkActive("/") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">🏡</span>
+            <span className="nav-label">Home</span>
+          </div>
+        ) : (
+          <Link to="/" className="nav-card">
+            <span className="nav-icon">🏡</span>
+            <span className="nav-label">Home</span>
+          </Link>
+        )}
 
-        <Link to="/contact" className="nav-card">
-          <span className="nav-icon">✉️</span>
-          <span className="nav-label">Contact</span>
-        </Link>
+        {/* Portfolio Link */}
+        {isLinkActive("/portfolio") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">💼</span>
+            <span className="nav-label">Portfolio</span>
+          </div>
+        ) : (
+          <Link to="/portfolio" className="nav-card">
+            <span className="nav-icon">💼</span>
+            <span className="nav-label">Portfolio</span>
+          </Link>
+        )}
+
+        {/* Freelance Link */}
+        {isLinkActive("/freelance") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">💰</span>
+            <span className="nav-label">Freelance</span>
+          </div>
+        ) : (
+          <Link to="/freelance" className="nav-card">
+            <span className="nav-icon">💰</span>
+            <span className="nav-label">Freelance</span>
+          </Link>
+        )}
+
+        {/* Contact Link */}
+        {isLinkActive("/contact") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">✉️</span>
+            <span className="nav-label">Contact</span>
+          </div>
+        ) : (
+          <Link to="/contact" className="nav-card">
+            <span className="nav-icon">✉️</span>
+            <span className="nav-label">Contact</span>
+          </Link>
+        )}
       </div>
 
       {/* Section Heading ABOUT ME */}
@@ -151,21 +196,31 @@ const RetroHome = () => {
       </div>
 
       {/* Navigation */}
-      <div className="section-heading">
+      {/* <div className="section-heading">
         <span className="diamond">♦</span> NAVIGATION <span className="diamond">♦</span>
       </div>
 
       <div className="nav-grid">
+        <Link to="/" className="nav-card">
+          <span className="nav-icon">🏡</span>
+          <span className="nav-label">Home</span>
+        </Link>
+
         <Link to="/portfolio" className="nav-card">
           <span className="nav-icon">💼</span>
           <span className="nav-label">Portfolio</span>
+        </Link>
+
+        <Link to="/freelance" className="nav-card">
+          <span className="nav-icon">💰</span>
+          <span className="nav-label">Freelance</span>
         </Link>
 
         <Link to="/contact" className="nav-card">
           <span className="nav-icon">✉️</span>
           <span className="nav-label">Contact</span>
         </Link>
-      </div>
+      </div> */}
 
       {/* Social Links */}
       <div className="social-links">

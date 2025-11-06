@@ -1,7 +1,9 @@
 import React from 'react'; // Remove useState since we're not using tabs
 import { Link } from 'react-router-dom';
 
-const RetroPortfolio = () => {
+const RetroPortfolio = ({ currentPath }) => {
+  // Helper function to determine if a link is active
+  const isLinkActive = (path) => currentPath === path;
 
   const projects = [
     {
@@ -84,6 +86,15 @@ const RetroPortfolio = () => {
       technologies: ["Java 21", "Spring Boot", "Spring Security", "WebSocket", "Spring Data JPA", "PostgreSQL", "JWT Authentication", "JUnit", "Mockito", "Swagger", "Alpha Vantage API", "Finnhub API", "Maven", "Flyway Migration", "Testcontainers", "Real-time Streaming"],
       link: null,
       code: "https://github.com/mattbixby123/portfolio-tracker-backend"
+    },
+    {
+      title: "Allergen Intelligence Platform",
+      date: "Sep 2025",
+      emoji: "🧪",
+      description: "Spring Boot microservices platform for chemical allergen research in cosmetic ingredients. Achieves 95% cost reduction through intelligent caching strategy, integrating PubChem and OpenAI APIs for automated literature synthesis. Features PostgreSQL pgvector for sub-second cached responses (18s → 18ms) with all analysis backed by peer-reviewed citations.",
+      technologies: ["Java 21", "Spring Boot", "PostgreSQL", "pgvector", "PubChem API", "OpenAI API", "Spring Data JPA", "REST APIs", "Intelligent Caching", "Research Automation"],
+      link: null,
+      code: "https://github.com/mattbixby123/allergen-intelligence"
     }
   ];
 
@@ -107,15 +118,57 @@ const RetroPortfolio = () => {
       </div>
 
       <div className="nav-grid">
-        <Link to="/" className="nav-card">
-          <span className="nav-icon">🏡</span>
-          <span className="nav-label">Home</span>
-        </Link>
+        {/* Home Link */}
+        {isLinkActive("/") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">🏡</span>
+            <span className="nav-label">Home</span>
+          </div>
+        ) : (
+          <Link to="/" className="nav-card">
+            <span className="nav-icon">🏡</span>
+            <span className="nav-label">Home</span>
+          </Link>
+        )}
 
-        <Link to="/contact" className="nav-card">
-          <span className="nav-icon">✉️</span>
-          <span className="nav-label">Contact</span>
-        </Link>
+        {/* Portfolio Link */}
+        {isLinkActive("/portfolio") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">💼</span>
+            <span className="nav-label">Portfolio</span>
+          </div>
+        ) : (
+          <Link to="/portfolio" className="nav-card">
+            <span className="nav-icon">💼</span>
+            <span className="nav-label">Portfolio</span>
+          </Link>
+        )}
+
+        {/* Freelance Link */}
+        {isLinkActive("/freelance") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">💰</span>
+            <span className="nav-label">Freelance</span>
+          </div>
+        ) : (
+          <Link to="/freelance" className="nav-card">
+            <span className="nav-icon">💰</span>
+            <span className="nav-label">Freelance</span>
+          </Link>
+        )}
+
+        {/* Contact Link */}
+        {isLinkActive("/contact") ? (
+          <div className="nav-card nav-card-disabled">
+            <span className="nav-icon">✉️</span>
+            <span className="nav-label">Contact</span>
+          </div>
+        ) : (
+          <Link to="/contact" className="nav-card">
+            <span className="nav-icon">✉️</span>
+            <span className="nav-label">Contact</span>
+          </Link>
+        )}
       </div>
 
       {/* Projects Section - Remove conditional rendering since we only have projects */}
@@ -185,7 +238,7 @@ const RetroPortfolio = () => {
       </div>
 
       {/* Navigation */}
-      <div className="section-heading">
+      {/* <div className="section-heading">
         <span className="diamond">♦</span> NAVIGATION <span className="diamond">♦</span>
       </div>
 
@@ -195,11 +248,21 @@ const RetroPortfolio = () => {
           <span className="nav-label">Home</span>
         </Link>
 
+        <Link to="/portfolio" className="nav-card">
+          <span className="nav-icon">💼</span>
+          <span className="nav-label">Portfolio</span>
+        </Link>
+
+        <Link to="/freelance" className="nav-card">
+          <span className="nav-icon">💰</span>
+          <span className="nav-label">Freelance</span>
+        </Link>
+
         <Link to="/contact" className="nav-card">
           <span className="nav-icon">✉️</span>
           <span className="nav-label">Contact</span>
         </Link>
-      </div>
+      </div> */}
 
       {/* Social Links */}
       <div className="social-links">
