@@ -3,10 +3,10 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 // retro-themed components
-import RetroHome from './components/RetroHome';
-import RetroPortfolio from './components/RetroPortfolio';
-import RetroContact from './components/RetroContact'
-import RetroFreelance from './components/RetroFreelance';
+import RetroHome from './pages/RetroHome';
+import RetroPortfolio from './pages/RetroPortfolio';
+import RetroContact from './pages/RetroContact'
+import RetroFreelance from './pages/RetroFreelance';
 
 // Import RetroStyle.css
 import './RetroStyle.css';
