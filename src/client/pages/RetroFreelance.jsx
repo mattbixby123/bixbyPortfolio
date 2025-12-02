@@ -40,6 +40,13 @@ const RetroFreelance = ({ currentPath }) => {
         </p>
 
         <p style={{ marginTop: '1rem' }}>
+          <strong>Content-managed websites:</strong> For businesses that need to update
+          content regularly (blogs, portfolios, news), I integrate headless CMS solutions
+          (Sanity, Contentful) with custom React frontends—giving you a beautiful site
+          you can update yourself without calling me for every change.
+        </p>
+
+        <p style={{ marginTop: '1rem' }}>
           <strong>Custom systems I build:</strong> Product Information Management (PIM),
           Laboratory Information Management Systems (LIMS), custom CRM workflows, data pipelines,
           REST APIs, microservices architecture, and VPS infrastructure with Docker/nginx. If you
@@ -116,7 +123,8 @@ const RetroFreelance = ({ currentPath }) => {
 
         <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#666' }}>
           Note: Build fees are one-time costs. Optional ongoing maintenance and hosting support available starting at
-          $50/month depending on site complexity and requirements.
+          $50/month depending on site complexity and requirements. Domain registration ($10-15/year, paid directly to
+          registrar) and SSL certificates are handled during setup.
         </p>
       </div>
 
