@@ -9,7 +9,7 @@ const RetroPortfolio = ({ currentPath }) => {
       emoji: "🐶",
       description: "This application is for managing a Puppy Bowl competition. Users will be able to view a list of players competing in the bowl, access detailed information about each player, create new players through a form, search for specific players, and delete players they have created.",
       technologies: ["React-Redux", "React Router", "Redux Toolkit", "HTML5", "CSS", "JavaScript", "JavaScript APIs"],
-      link: "https://664255b4e94e3705d7a90302--bespoke-pixie-99297e.netlify.app/",
+      link: "https://bespoke-pixie-99297e.netlify.app/",
       code: "https://github.com/mattbixby123/PuppyBowlSPA"
     },
     {
